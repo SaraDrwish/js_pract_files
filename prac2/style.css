@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(147, 177, 167);
+}
+
+*{
+    box-sizing: border-box;
+
+}
+
+section{
+    min-height: 100vh;
+    /* background-color: rgb(170, 167, 167); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section:first-child{
+    background-color: rgb(153, 152, 152);
+}
+
+section:nth-child(2){
+    background-color: rgb(175, 174, 174);
+}
+section:nth-child(3){
+    background-color: rgba(167, 165, 165, 0.87);
+    color: rgb(97, 59, 65);
+
+}
+section:last-of-type{
+    background-color: lightgray;
+}
+
+.progress{
+position: relative;
+width: 555px;
+height: 55px;
+margin: 22px;
+background-color: rgb(212, 188, 188);
+color: rgb(124, 82, 89);
+}
+
+.progress span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width:50px; */
+    height: 100%;
+    background-color: rgb(117, 95, 98);
+    /*z-index: 11;
+    */transition: width 0.3s linear ;
+    -webkit-transition: width 0.3s linear ;
+    -moz-transition: width 0.3s linear ;
+    -ms-transition: width 0.3s linear ;
+    -o-transition: width 0.3s linear ;
+}
