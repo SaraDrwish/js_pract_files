@@ -1,0 +1,116 @@
+*{
+    background-color: rgba(180, 207, 199, 0.925);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1%;
+    flex-wrap: wrap;
+    background-color: rgba(209, 192, 192, 0.89);
+    margin: 4% auto;
+    width: 80%;
+}
+
+.c1 , .c2{
+
+    width: 200px;
+    height: 200px;
+    
+    background-color: rgb(194, 68, 89);
+    clip-path: circle(30% at 50% 50%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.t1 , .t3{
+    width: 150px;
+    height: 150px;
+    /* position: absolute; */
+    background-color: rgb(94, 66, 66);
+    clip-path:polygon(50% 0% , 100% 100% , 0% 50% );
+}
+
+
+.t2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(89, 128, 146);
+    clip-path:polygon(50% 0% , 100% 100% , 0% 100% );
+    position: absolute;
+    /* bottom: 0; */
+    z-index: 2;
+     
+}
+
+form{
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+     /* background-color: rgba(143, 110, 110, 0.788); */
+    margin:  auto; 
+    width: 77%;
+
+    /* padding: 1%; */
+}
+
+ 
+
+.textBox input{
+    border: none;
+    border-bottom: rgb(122, 69, 69) 2px solid; 
+    /* background-color: rgba(157, 194, 183, 0.925); */
+    padding: 1%;
+    width:100%;
+    margin: 2%;
+    color: rgba(141, 104, 104, 0.788);
+    font-size: 24px;
+}
+
+.textBox input:focus{
+    outline: none ;
+    /* border: none; */
+    /* color-adjust: red; */
+}
+
+
+.textBox span{
+/* margin:  0 4%; */
+/* color: rgba(121, 89, 89, 0.788);
+font-size: 25px; */
+}
+
+
+.progress{
+          width:0%;
+          height: 2px;
+          background-color: royalblue;
+          display: block;
+          position: relative;
+          top: -25px;
+          left: 24px;
+          transition:0.5s ;
+          -webkit-transition:0.5s ;
+          -moz-transition:0.5s ;
+          -ms-transition:0.5s ;
+          -o-transition:0.5s ;
+}
+
+.counter{
+display: block;
+text-align: right;
+font-size: 20px;
+color: rgba(121, 89, 89, 0.788);
+
+}
+
+.zero{
+    color: rgb(201, 67, 67);
+    font-size: 33px;
+    font-weight: bold;
+}
