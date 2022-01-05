@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(255, 220, 226);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(212, 126, 126);
+
+}
+
+ 
+/* =====================start scroll===================== */
+
+
+
+
+
+/* ++++++++++++++++++++++++++++++start nav ++++++++++++++++++++++++++++++++++ */
+
+.toggle{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(167, 148, 156);
+    display: flex;
+    /*text-align: center;
+    */justify-content:space-between;
+    /*flex-wrap: wrap;
+    */margin: 1%;
+    cursor: pointer;
+    padding: 1%;
+    flex-direction: column;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.toggle span{
+    width: 100%;
+    background-color: rgb(138, 137, 74);
+    height: 3px;
+    /*margin: 11px 0;
+    */transition: all .5s ease-in;
+   
+}
+
+.toggle:hover span{
+background-color: rgb(150, 98, 104);
+}
+nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1111111;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgb(36, 3, 3);
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+nav.open{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+nav a{
+    text-decoration: none;
+    color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    width: 100%;
+    
+     flex-basis: 18%;
+
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    /* display: fixed;
+    top: 0;
+    left: 0; */
+
+}
+
+nav a:hover{
+    background-color: rgb(53, 18, 18);
+}
+
+nav span{
+    position: fixed;
+    right: 1%;
+    top: 1%;
+    width: 3%;
+    height: 9%;
+    border: lightcoral 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:25px ;
+    -webkit-border-radius:25px ;
+    -moz-border-radius:25px ;
+    -ms-border-radius:25px ;
+    -o-border-radius:25px ;
+    transition:all .3s ease-in;
+    -webkit-transition:all .3s ease-in;
+    -moz-transition:all .3s ease-in;
+    -ms-transition:all .3s ease-in;
+    -o-transition:all .3s ease-in;
+    cursor: pointer;
+}
+
+nav span:hover{
+    border: rgb(116, 41, 41) 2px solid;
+    color: rgb(116, 41, 41);
+  
+}
+
+
+
+
+
+
+
+
+/* +++++++++++++++++++++++++++++++++ end NAV ++++++++++++++++++++++++++++++ */
+
+
+
+
+
+
+
+.prg{
+    width: 20%;
+    height: 100px;
+    background-color: rgb(107, 93, 96);
+    overflow: auto;
+    margin:4% auto;
+}
+
+.prg p {
+    width: 311px;
+    height: 111px;
+}
+.prg::-webkit-scrollbar-track{
+    background-color: rgb(215, 245, 240);
+}
+.prg::-webkit-scrollbar-thumb{
+    background-color: rgb(199, 193, 165);
+}
+.prg::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(138, 137, 74);
+}
+.prg::-webkit-scrollbar-corner{
+    background-color: rgb(68, 59, 46);
+}
+.prg p {
+}
+.sec{
+    margin:4% auto;
+    width: 80%;   
+    }
+::-webkit-scrollbar{
+    width: 30px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(245, 215, 230);
+    box-shadow: 0 0 10px gray inset;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(47, 100, 107);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(111, 174, 182);
+}
+/* .prg .parag1{
+scrollbar-color: red green;
+} */
+
+/* ===================== end scroll===================== */
+
