@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+:root{
+    --GroundColor:rgb(151, 141, 141);
+}
+.game{
+    color: midnightblue;
+    font-size: 33px;
+    font-weight: 600;
+    width: 400px;
+    margin: 3% auto;
+    
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.title{
+background-color: var(--GroundColor);
+padding: 2% 0;
+margin: 2% 0;
+width: 100%;
+}
+.title span{
+    color: orange;
+}
+.squer{
+            background-color: var(--GroundColor);
+            width: 125px;
+            height: 125px;
+            margin: 1% ;
+            /*padding: 1%;*/
+                 
+            /* display: inline-flex;
+            justify-content: space-between;
+            align-items: center; */
+            /*flex-wrap: wrap;
+            */
+            /*gap: 1%;
+            */
+            
+            font-size: 55px;
+            /* float: left; */
+             transition: all .6s ease;
+            -webkit-transition: all .5s ease;
+            -moz-transition: all .5s ease;
+            -ms-transition: all .5s ease;
+            -o-transition: all .5s ease;
+}
+.squer:hover{
+    background-color: rgb(92, 76, 76);
+    cursor: pointer;
+}
