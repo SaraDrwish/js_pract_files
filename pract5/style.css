@@ -109,6 +109,8 @@ nav a:hover{
     background-color: rgb(53, 18, 18);
 }
 
+/* احنا عملنا البوزشن فيكسد عشان نخرجه برا الناف الاحمر ويكون تحته وميتحركش معاه */
+
 nav span{
     position: fixed;
     right: 1%;

@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+:root{
+    --mainColorBaj:rgb(243, 213, 174);
+}
+
+p{
+    color: var(--mainColorBaj);
+    border-right: 2px solid var(--mainColorBaj);
+    font-size: 44px ;
+    width: 655px;
+    /*لوحطيتالمارجناوتومنغيرالودثمشهيزبط*/
+    
+    
+    margin: 4% auto;
+    white-space: nowrap;
+    /*عشانالكلاممينزلشيفضلفينفسالسطر*/
+    
+    
+    
+    overflow: hidden;
+    /*عشانالكلاملوخرجبرهالودثيختفي*/
+    
+    
+    animation:widthanmiControl  3s 2s steps(25) both , curserColor .5s infinite ;
+
+}
+
+@keyframes widthanmiControl{
+    from{
+
+        width: 0;
+
+    }
+    to{
+        width: 655px;
+
+    }
+}
+
+@keyframes curserColor{
+
+    from{
+        border-right-color: var(--mainColorBaj);
+    }
+    to{
+        border-right-color: transparent;
+
+    }
+
+}
