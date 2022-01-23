@@ -52,6 +52,9 @@ width: 100%;
             -moz-transition: all .5s ease;
             -ms-transition: all .5s ease;
             -o-transition: all .5s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 }
 .squer:hover{
     background-color: rgb(92, 76, 76);
