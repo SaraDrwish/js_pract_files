@@ -38,17 +38,15 @@ tasksDiv.addEventListener("click" , (e) => {
                     //remove element from page
                 e.target.parentElement.remove();
 
-
+         }
                 //update
 
-                toggelLocalupdate(e.target.getAttribute("data-id"));
-
-
                 if(e.target.classList.contains("divTaskCreated")){
+
+                    toggelLocalupdate(e.target.getAttribute("data-id"));
+
                     e.target.classList.toggle("done");
                 }
-
-         }
 
  });
 
@@ -60,7 +58,7 @@ function addTasksToArray(taskText){
     const task = {
         id: Date.now(),
         completed: false ,
-        title:taskText, 
+        title: taskText, 
     };
 
     //push tasks to array of tasks 
@@ -99,11 +97,11 @@ function addElementsToArrayFrom(arrayOfTasks){
     //check if task done or not 
 
     if(task.completed){
-    // divTaskCreated.className = "divTaskCreated done";
+    // divTaskCreated.className = "task done";
     divTaskCreated.className = "divTaskCreated done";
 }
 
-    divTaskCreated.setAttribute("data-id" , divTaskCreated.id);
+    divTaskCreated.setAttribute("data-id" , task.id);
     divTaskCreated.appendChild(document.createTextNode(task.title));
 
     // console.log(divTaskCreated);
@@ -111,7 +109,7 @@ function addElementsToArrayFrom(arrayOfTasks){
     //creat delete span button 
     let span = document.createElement("span");
     span.className="delBtn";
-    span.appendChild(document.createTextNode("deleteBtn"));
+    span.appendChild(document.createTextNode("Delete"));
     //add span to div
     divTaskCreated.appendChild(span);
 
@@ -158,7 +156,7 @@ function toggelLocalupdate(taskId){
 
 for(let i = 0 ; i < arrayOfTasks.length ; i++){
     if(arrayOfTasks[i].id == taskId){
-        arrayOfTasks[i].completed == false ? ( arrayOfTasks[i].completed =false) : (arrayOfTasks[i].completed = true) ;
+        arrayOfTasks[i].completed == false ? ( arrayOfTasks[i].completed = true) : (arrayOfTasks[i].completed = false) ;
     }
 }
 
@@ -168,7 +166,7 @@ for(let i = 0 ; i < arrayOfTasks.length ; i++){
 
 
 
-function clearAll(){
-    window.localStorage.removeItem("tasks");
-   tasksDiv.innerHTML ="";
-}
+// function clearAll(){
+//     window.localStorage.removeItem("tasks");
+//    tasksDiv.innerHTML = " ";
+// }
