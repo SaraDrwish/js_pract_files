@@ -32,23 +32,26 @@ tasksDiv.addEventListener("click" , (e) => {
         //delete button 
         if(e.target.classList.contains("delBtn")){
 
-        //remove task from local storage
-        deleteTask(e.target.parentElement.getAttribute("data-id"));
+                //remove task from local storage
+                deleteTask(e.target.parentElement.getAttribute("data-id"));
 
-            //remove element from page
-        e.target.parentElement.remove();
+                    //remove element from page
+                e.target.parentElement.remove();
 
 
-        //update
+                //update
 
-        if(e.target.classList.contains("divTaskCreated")){
-            e.target.classList.toggle("done");
-        }
+                toggelLocalupdate(e.target.getAttribute("data-id"));
 
-}
 
- }
-);
+                if(e.target.classList.contains("divTaskCreated")){
+                    e.target.classList.toggle("done");
+                }
+
+         }
+
+ });
+
 
 
 
@@ -96,12 +99,14 @@ function addElementsToArrayFrom(arrayOfTasks){
     //check if task done or not 
 
     if(task.completed){
+    // divTaskCreated.className = "divTaskCreated done";
     divTaskCreated.className = "divTaskCreated done";
-    // divTaskCreated.className = " task  done";
 }
 
-    divTaskCreated.setAttribute("data-id" , task.id);
+    divTaskCreated.setAttribute("data-id" , divTaskCreated.id);
     divTaskCreated.appendChild(document.createTextNode(task.title));
+
+    // console.log(divTaskCreated);
 
     //creat delete span button 
     let span = document.createElement("span");
@@ -142,8 +147,28 @@ function getDataFromLocale(){
 
 
 
-
 function deleteTask(taskId){
     arrayOfTasks = arrayOfTasks.filter( (task)=> task.id != taskId ) ;
     addTasksToLocalStorageFrom(arrayOfTasks);
+}
+
+
+
+function toggelLocalupdate(taskId){
+
+for(let i = 0 ; i < arrayOfTasks.length ; i++){
+    if(arrayOfTasks[i].id == taskId){
+        arrayOfTasks[i].completed == false ? ( arrayOfTasks[i].completed =false) : (arrayOfTasks[i].completed = true) ;
+    }
+}
+
+    addTasksToLocalStorageFrom(arrayOfTasks);
+
+}
+
+
+
+function clearAll(){
+    window.localStorage.removeItem("tasks");
+   tasksDiv.innerHTML ="";
 }
