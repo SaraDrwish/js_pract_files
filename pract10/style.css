@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.filtetTop a{
+text-decoration: none;
+color: unset;
+}
+.mainsec{
+    margin:5%  auto;
+    width: 70%;
+}
+.filtetTop{
+    text-align: center;
+     margin: 4% 0;
+}
+.filtetTop ul{
+    text-decoration: none;
+    display: block;
+    list-style: none;
+ }
+.filtetTop li{
+    display: inline-block;
+    padding: 2% 4% ;
+    font-size: 25px;
+    background-color: rgb(216, 232, 236);
+    color: rgb(71, 104, 114);
+    transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+}
+.filtetTop .main{
+    background-color: rgb(32, 62, 70);
+    color: rgb(143, 170, 180);
+}
+.filtetTop li:hover{
+    background-color: rgb(90, 126, 136);
+    color: rgb(207, 221, 226);
+}
+.filterpic{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+    margin: 1% auto;
+}
+.filterpic img{
+   width: 20%;
+   margin: 6px
+}
