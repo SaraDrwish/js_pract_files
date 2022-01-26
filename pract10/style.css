@@ -22,7 +22,8 @@ color: unset;
  }
 .filtetTop li{
     display: inline-block;
-    padding: 2% 4% ;
+    padding: 2% 0;
+    min-width: 15%;
     font-size: 25px;
     background-color: rgb(216, 232, 236);
     color: rgb(71, 104, 114);
