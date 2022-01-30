@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section{
+    width: 100%;
+    margin:8% auto;
+}
+.ser{
+         width: 222px;
+         margin: auto;
+          padding: 20px;
+         background-color: brown;
+         color: wheat;
+         text-align: center;
+         font-size: 33px;
+         border-radius: 15px;
+         -webkit-border-radius: 15px;
+         -moz-border-radius: 15px;
+         -ms-border-radius: 15px;
+         -o-border-radius: 15px;
+}
+.gen{
+    /*spanisaninlinesocanttakethestyle*/
+    display: block;
+    width:fit-content;
+    /*height: 88px;  */
+    margin: 44px auto;
+    background-color: bisque;
+    color: rgb(190, 72, 72);
+    font-size: 28px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    cursor: pointer;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+
+    user-select: none;
+}
+.gen:hover{
+    background-color: rgb(212, 189, 159);
+    color: brown;
+}
