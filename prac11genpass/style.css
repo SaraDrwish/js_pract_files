@@ -11,13 +11,15 @@ section{
     margin:8% auto;
 }
 .ser{
-         width: 222px;
+         width: 244px;
          margin: auto;
-          padding: 20px;
-         background-color: brown;
-         color: wheat;
+         height: 77px;
+         padding: 20px;
+         background-color: rgb(148, 32, 32);
+         color: rgb(241, 230, 207);
+         font-weight: bold;
          text-align: center;
-         font-size: 33px;
+         font-size: 30px;
          border-radius: 15px;
          -webkit-border-radius: 15px;
          -moz-border-radius: 15px;
